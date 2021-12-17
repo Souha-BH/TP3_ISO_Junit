@@ -86,9 +86,8 @@ public class app{
     	todoRemoved.click();
     }
 
-
-	private void validateInnerText(WebElement element, String expectedTest) {
-		ExpectedConditions.textToBePresentInElement(element, expectedTest);
+	private void validateInnerText(WebElement element, String expectedText) {
+		ExpectedConditions.textToBePresentInElement(element, expectedText);
 	}
 
 	@AfterEach
